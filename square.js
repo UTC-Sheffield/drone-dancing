@@ -2,7 +2,6 @@ var autonomy = require('ardrone-autonomy');
 var mission  = autonomy.createMission();
 
 mission.takeoff()
-       .zero()       // Sets the current state as the reference
        .altitude(1)  // Climb to altitude = 1 meter
        .forward(1.2)
        .cw(90)
@@ -11,7 +10,8 @@ mission.takeoff()
        .forward(1.2)
        .cw(90)
        .forward(1.2)
-       .cw(90);
+       .cw(90)
+       .land();
 
 mission.run(function (err, result) {
     if (err) {
