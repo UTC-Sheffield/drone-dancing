@@ -1,6 +1,9 @@
 //Lauren Hopkins
 //Version
 
+var autonomy = require('ardrone-autonomy');
+var mission  = autonomy.createMission();
+
 
 mission.takeoff()
        .zero()
