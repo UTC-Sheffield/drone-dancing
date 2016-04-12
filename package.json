@@ -1,0 +1,18 @@
+{
+  "name": "drone-dancing",
+  "version": "0.1.0",
+  "description": "Mobile app what will make a drone dance",
+  "main": "chacha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.utcsheffield.org.uk/12flintw/drone-dancing.git"
+  },
+  "keywords": [
+    "Drone"
+  ],
+  "author": "Tech group",
+  "license": "GPL-2.0"
+}
