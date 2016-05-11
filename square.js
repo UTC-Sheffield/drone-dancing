@@ -3,14 +3,14 @@ var mission  = autonomy.createMission();
 
 mission.takeoff()
        .altitude(1)  // Climb to altitude = 1 meter
-       .forward(1.2)
+       .forward(1)
+       /*.cw(90)
+       .forward(1)
        .cw(90)
-       .forward(1.2)
+       .forward(1)
        .cw(90)
-       .forward(1.2)
-       .cw(90)
-       .forward(1.2)
-       .cw(90)
+       .forward(1)
+       .cw(90)*/
        .land();
 
 mission.run(function (err, result) {

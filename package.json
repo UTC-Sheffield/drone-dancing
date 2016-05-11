@@ -2,8 +2,9 @@
   "name": "drone-dancing",
   "version": "0.1.0",
   "description": "Mobile app what will make a drone dance",
-  "main": "chacha.js",
+  "private": true,
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,6 +14,18 @@
   "keywords": [
     "Drone"
   ],
-  "author": "Tech group",
-  "license": "GPL-2.0"
+  "author": "UTC Sheffield Tech group",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "ar-drone": "^0.3.3",
+    "ardrone-autonomy": "^0.1.2",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "socket.io": "~1.4.5"
+  }
 }
