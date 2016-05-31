@@ -1,9 +1,12 @@
 //Tech group UTC sheffield
 //Version
 
-
+var ardrone = require('ar-drone');
 var autonomy = require('ardrone-autonomy');
-var mission  = autonomy.createMission();
+
+var client  = ardrone.createClient({});
+var oController = new autonomy.Controller(client, {});
+
 var temporal = require('temporal');
 
 /*
@@ -22,51 +25,53 @@ var DanceData =   JSON.parse(FileData); //Take the string and read the file into
 var BeatsFileData = fs.readFileSync("beats/ccs.json").toString(); //Read the File put it in a string
 
 var BeatsData =   JSON.parse(BeatsFileData); //Take the string and read the file into a big javascript array
-console.log("BeatsData =", BeatsData);
+var Features = JSON.parse(BeatsData.features);
+//console.log("BeatsData =", JSON.parse(BeatsData.features));
 
-process.exit();
+//process.exit();
 
-DanceData = DanceData.slice(0, 3);
-DanceData.push({ move: 'land', param: null, beats: 1 });
+DanceData = DanceData.slice(0, 2);
 
-
-console.log("DanceData =", DanceData.length);
+//console.log("DanceData =", DanceData.length);
 
 var currentBeat = 0 ;
 
 //When a step completes whilst we a flying so we can spot the steps that don't complete
 function onStepComplete(stepid, move, params, beats){
-  console,log("Step",stepid,"complete", move, params, beats);
+  console.log("Step",stepid,"complete", move, params, beats);
 }
 
+var Delay = 2000; 
 
-var Moves = DanceData.map(function(step, i){
-	var thisBeat = BeatsData.features.timeline.beat[currentBeat]
-	//{"strength": 0.078141179248255532, "time": 110.95700836}
+var Moves = DanceData.map(function(step, stepid){
+	var thisBeat = Features.timeline.beat[currentBeat];
+	var time = Math.round(thisBeat.time*1000) + Delay;
+	//console.log(thisBeat, time) 
+	
 	
 	console.log(step);
 	if(step.move == "takeoff" || step.move == "land"|| step.move == "zero") {
-		 var NextStep = oController[move].bind(oController, onStepComplete.bind(undefined, stepid, move, params, beats));
+		 var NextStep = oController[step.move].bind(oController, onStepComplete.bind(undefined, stepid, step.move, step.param, step.beats));
 	}else{
-		 var NextStep = oController[move].bind(oController, param, onStepComplete.bind(undefined, stepid, move, params, beats));
+		 var NextStep = oController[step.move].bind(oController, step.param, onStepComplete.bind(undefined, stepid, step.move, step.param, step.beats));
 	}
 	
+	currentBeat += step.beats; 
 	return {
-        delay: 500,
+        delay: time,
         task: NextStep
       };
 });
 
+// TODO : need to kill uncompleted tasks from queue so "end" fires.
 
-
-mission.run(function (err, result) {
-    if (err) {
-        console.trace("Oops, something bad happened: %s", err.message);
-        mission.client().stop();
-        mission.client().land();
-    } else {
-        console.log("Mission success!");
-        process.exit(0);
-    }
+client.takeoff(function(){
+	
+	//play the music , maybe wait for it to recongnise that.
+	temporal.queue(Moves);
 });
 
+
+temporal.on("end", function() {
+  client.land(); 
+});

@@ -1,5 +1,4 @@
 [
-{"move":"takeoff", "param":null, "beats":1},
 {"move":"zero", "param":null, "beats":1},
 {"move":"altitude", "param":1, "beats":1},
 {"move":"left", "param":1, "beats":1},
@@ -180,6 +179,5 @@
 {"move":"forward", "param":1, "beats":1},
 {"move":"backward", "param":1, "beats":1},
 {"move":"forward", "param":1, "beats":1},
-{"move":"backward", "param":1, "beats":1},
-{"move":"land", "param":null, "beats":1}
+{"move":"backward", "param":1, "beats":1}
 ]
