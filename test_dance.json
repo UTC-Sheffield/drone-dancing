@@ -1,0 +1,14 @@
+[
+	{"move":"up", "param":1, "beats":4},
+	{"move":"down", "param":1, "beats":4},
+	{"move":"forward", "param":1, "beats":4},
+	{"move":"backward", "param":1, "beats":4},
+	{"move":"left", "param":1, "beats":4},
+	{"move":"right", "param":1, "beats":4},
+	{"move":"return", "param":null, "beats":4},
+	{"move":"cw", "param":180, "beats":2},
+	{"move":"cw", "param":360, "beats":2},
+	{"move":"ccw", "param":0, "beats":2},
+	{"move":"ccw", "param":180, "beats":2},
+	{"move":"return", "param":null, "beats":4}
+]
