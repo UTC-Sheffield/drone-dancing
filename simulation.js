@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 //Tech group UTC sheffield
 //Version
 
@@ -6,29 +8,37 @@ var autonomy = require('ardrone-autonomy-withsim');
 var client  = ardrone.createClient({});
 var temporal = require('temporal');
 
+var iSpeedUp = 10;
+var iWarningDistance = 0;
+
+
 // TODO : make zero work
 // TODO : work out absolute position if everything worked so we can visualise the choerography 
 // TODO : measure the bounding box of the dance if eveything goes well
 // TODO : Beable to use named sequences of moves in the choreography )choruses etc)
+// TODO : Command line or nwjs
 
-// TODO : use Controller.on("controlData"  to add some logging
-// TODO : Try using the tag to improve results
 
+// TODO : move these to an overloaded file
+/* Adds a dummy distance and a callback to fit all the other moves
+ * Sets the goal to the current state and attempt to hover on top.
+ * conditionally add the code for simulation
+ * Add move() which is  a relative go()
+ * Conditionally make the relative moves relative to the goal not the current state()
+ */
 
 var CtrlOptions = {
 		"alwayscallback":true,
+		"simulation":true,
 		"relativetogoal":true,
 	};
-	
 var oController = new autonomy.Controller(client, CtrlOptions);
-
 
 
 temporal.on("idle", function() {
 	console.log("Temporal is idle : Landing");
-	client.land(function(){
+	// TODO : save aLog
 		process.exit();
-	});
 });
 
 temporal.on("end", function() {
@@ -37,9 +47,9 @@ temporal.on("end", function() {
 });
 
 process.on("exit", function() {
-	client.land(function(){
+	/*client.land(function(){
 	  process.exit();
-	});
+	});*/
 });
 
 
@@ -73,7 +83,18 @@ console.log("DanceData", DanceData.length);
 
 //When a logs when a step ends so we can spot the steps that don't complete
 function onStepEnd(stepid, move, params, beats){
-  console.log("Step",stepid, "Complete", this._goal.reached, move, params, beats);
+  //aLog.push({"stepid":stepid, move:move, params:params, beats:beats, "goal":this._goal});
+  if(this._goal.x <= -iWarningDistance || this._goal.x >= iWarningDistance 
+    || this._goal.y <= -iWarningDistance || this._goal.y >= iWarningDistance
+	|| this._goal.z <= -iWarningDistance || this._goal.z >= iWarningDistance){
+	//console.log("Step",stepid, move, "params",params, "beats",beats, "goal", this._goal);
+	console.log("Step",stepid, 
+	 "x", Math.round(this._goal.x *10) /10,
+	"y", Math.round(this._goal.y *10) /10,
+	"z", Math.round(this._goal.z *10) /10,
+	"yaw", this._goal.yaw?Math.round(this._goal.yaw.toDeg()):0,
+	"move", move, "params",params, "beats",beats);
+  }
 }
 
 var Beats = Features.timeline.beat.map(function(Beat){
@@ -101,7 +122,7 @@ var Moves = DanceData.map(function(step, stepid){
 	
 	//Each step starts at a fixed time from the start of the last move 
 	return {
-        delay: BeatDelay,
+        delay: Math.round(BeatDelay / iSpeedUp),
         task: NextStep
         };
 });
@@ -109,7 +130,7 @@ var Moves = DanceData.map(function(step, stepid){
 console.log("Song Beats", Beats.length);
 console.log("next beat",currentBeat);
 
-client.takeoff(function(){	
+//client.takeoff(function(){	
 	//play the music , maybe wait for it to recongnise that.
 	temporal.queue(Moves);
-});
+//});
