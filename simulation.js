@@ -11,27 +11,17 @@ var temporal = require('temporal');
 var iSpeedUp = 10;
 var iWarningDistance = 0;
 
-
 // TODO : make zero work
-// TODO : work out absolute position if everything worked so we can visualise the choerography 
-// TODO : measure the bounding box of the dance if eveything goes well
 // TODO : Beable to use named sequences of moves in the choreography )choruses etc)
-// TODO : Command line or nwjs
+// TODO : Command line or nwjs interface
 
-
-// TODO : move these to an overloaded file
-/* Adds a dummy distance and a callback to fit all the other moves
- * Sets the goal to the current state and attempt to hover on top.
- * conditionally add the code for simulation
- * Add move() which is  a relative go()
- * Conditionally make the relative moves relative to the goal not the current state()
- */
 
 var CtrlOptions = {
 		"alwayscallback":true,
 		"simulation":true,
 		"relativetogoal":true,
-	};
+};
+
 var oController = new autonomy.Controller(client, CtrlOptions);
 
 
@@ -72,14 +62,6 @@ var BeatsData = JSON.parse(BeatsFileData); //Take the string and read the file i
 var Features = JSON.parse(BeatsData.features);
 console.log("DanceData", DanceData.length);
 
-/*DanceData = DanceData.map(function(step, stepid){
-	if (step.move == "down" || step.move =="up" || step.move =="forward" || step.move == "backward"){
-		if(step.param != null && typeof step.param != "object"){ 
-			step.param = step.param / 2;
-		} 
-	}
-	return step;
-});*/
 
 //When a logs when a step ends so we can spot the steps that don't complete
 function onStepEnd(stepid, move, params, beats){
