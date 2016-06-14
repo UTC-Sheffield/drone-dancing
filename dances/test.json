@@ -13,5 +13,8 @@
 	{"move":"ccw", "param":180, "beats":2},
 	{"move":"ccw", "param":180, "beats":2},
 	{"move":"backward", "param":2, "beats":2},
-	{"move":"forward", "param":2, "beats":10},	
+	{"move":"forward", "param":2, "beats":10},
+	{"move":"go", "param":{"x":-0.5,"y":0, "z":-0.5}, "beats":2},
+	{"move":"go", "param":{"x":0,"y":0, "z":0}, "beats":2},
+	{"move":"hover", "param":null, "beats":4}
 ]
