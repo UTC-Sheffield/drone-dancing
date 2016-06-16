@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head><title>UTC Sheffield Techgroup Drone Dancing</title></head>
+	<body>
+	<h1>UTC Sheffield Techgroup Drone Dancing</h1>
+	<!--<label>Song</label><select id="song">
+		<option value="ccs">Cha Cha Slide</option>
+		<option value="test">Test</option>
+	</select><br />
+	-->
+	<!-- have the beats a control and have the lyric recalc from the running beat count -->
+	<p>You have asked for <span data-bind='text: gifts().length'>&nbsp;</span> gift(s)</p>
+    <table data-bind='visible: gifts().length > 0'>
+        <thead>
+            <tr>
+                <th>Gift name</th>
+                <th>Price</th>
+                <th />
+            </tr>
+        </thead>
+        <tbody data-bind='foreach: gifts'>
+            <tr>
+                <td><input class='required' data-bind='value: name, uniqueName: true' /></td>
+                <td><input class='required number' data-bind='value: price, uniqueName: true' /></td>
+                <td><a href='#' data-bind='click: $root.removeGift'>Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+ 
+    <button data-bind='click: addGift'>Add Gift</button>
+    <button data-bind='enable: gifts().length > 0' type='submit'>Submit</button>
+
+
+	
+	<button id="start" onclick="Start();">Start</button>
+	<button id="stop" onclick="Stop();">Stop</button> <br />
+	<br />
+	<audio id="audioplayer" preload="auto" >
+	  <source src="songs/ccs.ogg" type="audio/ogg" />
+	</audio> 
+	
+	<br />
+	<table id="monitoring">
+		<tr>
+			<th>Step</th>
+			<th>x</th>
+			<th>y</th>
+			<th>z</th>
+			<th>yaw</th>
+			<th>move</th>
+			<th>params</th>
+			<th>beats</th>
+		</tr>
+	</table>
+	
+	<script src="node_modules/knockout/build/output/knockout-latest.js"></script>
+	<script src="edit.js"></script>
+</body>
+</html>

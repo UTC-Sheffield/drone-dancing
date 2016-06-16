@@ -1,0 +1,728 @@
+[
+  {
+    "lyric": "This is something new",
+    "time": 0,
+    "beattime": 0,
+    "beat": 0
+  },
+  {
+    "lyric": "the Caspa slide Part 2",
+    "time": 1625,
+    "beattime": 1405,
+    "beat": 3
+  },
+  {
+    "lyric": "Featuring the .....",
+    "time": 3419,
+    "beattime": 3193,
+    "beat": 7
+  },
+  {
+    "lyric": "and this time",
+    "time": 5128,
+    "beattime": 4981,
+    "beat": 11
+  },
+  {
+    "lyric": "We're gonna get funky",
+    "time": 6393,
+    "beattime": 6317,
+    "beat": 14
+  },
+  {
+    "lyric": "funky",
+    "time": 10989,
+    "beattime": 10813,
+    "beat": 24
+  },
+  {
+    "lyric": "Everybody clap your hands",
+    "time": 12982,
+    "beattime": 12613,
+    "beat": 28
+  },
+  {
+    "lyric": "Clap clap clap",
+    "time": 14810,
+    "beattime": 14409,
+    "beat": 32
+  },
+  {
+    "lyric": "clap your hands",
+    "time": 16447,
+    "beattime": 16213,
+    "beat": 36
+  },
+  {
+    "lyric": "Clap clap clap",
+    "time": 18141,
+    "beattime": 17989,
+    "beat": 40
+  },
+  {
+    "lyric": "clap your hands",
+    "time": 19760,
+    "beattime": 19361,
+    "beat": 43
+  },
+  {
+    "lyric": "Alright now",
+    "time": 20782,
+    "beattime": 20657,
+    "beat": 46
+  },
+  {
+    "lyric": "we're gonna do the basic steps",
+    "time": 21624,
+    "beattime": 21469,
+    "beat": 48
+  },
+  {
+    "lyric": "To the left",
+    "time": 23091,
+    "beattime": 22717,
+    "beat": 51
+  },
+  {
+    "lyric": "take it back now y'all",
+    "time": 24319,
+    "beattime": 24077,
+    "beat": 54
+  },
+  {
+    "lyric": "One hop this time",
+    "time": 26067,
+    "beattime": 25873,
+    "beat": 58
+  },
+  {
+    "lyric": "right foot",
+    "time": 27870,
+    "beattime": 27673,
+    "beat": 62
+  },
+  {
+    "lyric": "let's stomp",
+    "time": 28459,
+    "beattime": 28117,
+    "beat": 63
+  },
+  {
+    "lyric": "Left foot",
+    "time": 29618,
+    "beattime": 29465,
+    "beat": 66
+  },
+  {
+    "lyric": "let's stomp",
+    "time": 30061,
+    "beattime": 29909,
+    "beat": 67
+  },
+  {
+    "lyric": "cha cha real smooth",
+    "time": 31444,
+    "beattime": 31261,
+    "beat": 70
+  },
+  {
+    "lyric": "Turn it out",
+    "time": 35295,
+    "beattime": 35293,
+    "beat": 79
+  },
+  {
+    "lyric": "to the left",
+    "time": 37358,
+    "beattime": 37101,
+    "beat": 83
+  },
+  {
+    "lyric": "take it back now y'all",
+    "time": 38706,
+    "beattime": 38445,
+    "beat": 86
+  },
+  {
+    "lyric": "One hop this time",
+    "time": 40472,
+    "beattime": 40245,
+    "beat": 90
+  },
+  {
+    "lyric": "right foot let's stomp",
+    "time": 42296,
+    "beattime": 42041,
+    "beat": 94
+  },
+  {
+    "lyric": "Left foot let's stomp",
+    "time": 42898,
+    "beattime": 42477,
+    "beat": 95
+  },
+  {
+    "lyric": "cha cha now y'all",
+    "time": 45849,
+    "beattime": 45629,
+    "beat": 102
+  },
+  {
+    "lyric": "Last time to get funky",
+    "time": 48103,
+    "beattime": 47845,
+    "beat": 107
+  },
+  {
+    "lyric": "To the right now",
+    "time": 49940,
+    "beattime": 49669,
+    "beat": 111
+  },
+  {
+    "lyric": "to the left",
+    "time": 51856,
+    "beattime": 51493,
+    "beat": 115
+  },
+  {
+    "lyric": "take it back now y'all",
+    "time": 53542,
+    "beattime": 53269,
+    "beat": 119
+  },
+  {
+    "lyric": "One hop this time",
+    "time": 54969,
+    "beattime": 54665,
+    "beat": 122
+  },
+  {
+    "lyric": "one hop this time",
+    "time": 56276,
+    "beattime": 56169,
+    "beat": 125
+  },
+  {
+    "lyric": "Right foot",
+    "time": 58691,
+    "beattime": 58429,
+    "beat": 130
+  },
+  {
+    "lyric": "two stomps",
+    "time": 59469,
+    "beattime": 59325,
+    "beat": 132
+  },
+  {
+    "lyric": "left foot two stomps",
+    "time": 60505,
+    "beattime": 60233,
+    "beat": 134
+  },
+  {
+    "lyric": "Slide to the left",
+    "time": 62341,
+    "beattime": 62021,
+    "beat": 138
+  },
+  {
+    "lyric": "slide to the right",
+    "time": 63798,
+    "beattime": 63373,
+    "beat": 141
+  },
+  {
+    "lyric": "Criss cross",
+    "time": 65666,
+    "beattime": 65621,
+    "beat": 146
+  },
+  {
+    "lyric": "criss cross",
+    "time": 67538,
+    "beattime": 67413,
+    "beat": 150
+  },
+  {
+    "lyric": "Cha cha real smooth",
+    "time": 69576,
+    "beattime": 69213,
+    "beat": 154
+  },
+  {
+    "lyric": "let's go to work",
+    "time": 73015,
+    "beattime": 72793,
+    "beat": 162
+  },
+  {
+    "lyric": "To the left",
+    "time": 75141,
+    "beattime": 75041,
+    "beat": 167
+  },
+  {
+    "lyric": "take it back now y'all",
+    "time": 76510,
+    "beattime": 76393,
+    "beat": 170
+  },
+  {
+    "lyric": "Two hops this time",
+    "time": 78284,
+    "beattime": 78181,
+    "beat": 174
+  },
+  {
+    "lyric": "two hops this time",
+    "time": 80042,
+    "beattime": 79969,
+    "beat": 178
+  },
+  {
+    "lyric": "Right foot two stomps",
+    "time": 81925,
+    "beattime": 81769,
+    "beat": 182
+  },
+  {
+    "lyric": "left foot two stomps",
+    "time": 83760,
+    "beattime": 83565,
+    "beat": 186
+  },
+  {
+    "lyric": "Hands on your knees",
+    "time": 85106,
+    "beattime": 84913,
+    "beat": 189
+  },
+  {
+    "lyric": "hands on your knees",
+    "time": 85656,
+    "beattime": 85353,
+    "beat": 190
+  },
+  {
+    "lyric": "Get funky with it",
+    "time": 87751,
+    "beattime": 87613,
+    "beat": 195
+  },
+  {
+    "lyric": "oh yeah",
+    "time": 90353,
+    "beattime": 90313,
+    "beat": 201
+  },
+  {
+    "lyric": "c'mon",
+    "time": 93625,
+    "beattime": 93445,
+    "beat": 208
+  },
+  {
+    "lyric": "Cha cha now y'all",
+    "time": 94524,
+    "beattime": 94341,
+    "beat": 210
+  },
+  {
+    "lyric": "Turn it out",
+    "time": 98366,
+    "beattime": 97929,
+    "beat": 218
+  },
+  {
+    "lyric": "to the left",
+    "time": 100299,
+    "beattime": 100181,
+    "beat": 223
+  },
+  {
+    "lyric": "take it back now y'all",
+    "time": 101667,
+    "beattime": 101533,
+    "beat": 226
+  },
+  {
+    "lyric": "Five hops this time",
+    "time": 103422,
+    "beattime": 103321,
+    "beat": 230
+  },
+  {
+    "lyric": "hop it out now",
+    "time": 106086,
+    "beattime": 106033,
+    "beat": 236
+  },
+  {
+    "lyric": "Right foot let's stomp",
+    "time": 107300,
+    "beattime": 106929,
+    "beat": 238
+  },
+  {
+    "lyric": "left foot let's stomp",
+    "time": 108817,
+    "beattime": 108709,
+    "beat": 242
+  },
+  {
+    "lyric": "Right foot again",
+    "time": 110652,
+    "beattime": 110505,
+    "beat": 246
+  },
+  {
+    "lyric": "left foot again",
+    "time": 112359,
+    "beattime": 112305,
+    "beat": 250
+  },
+  {
+    "lyric": "Right foot let's stomp",
+    "time": 114194,
+    "beattime": 114101,
+    "beat": 254
+  },
+  {
+    "lyric": "left foot let's stomp",
+    "time": 115970,
+    "beattime": 115901,
+    "beat": 258
+  },
+  {
+    "lyric": "Freeze",
+    "time": 117695,
+    "beattime": 117693,
+    "beat": 262
+  },
+  {
+    "lyric": "everybody clap your hands",
+    "time": 119033,
+    "beattime": 118577,
+    "beat": 264
+  },
+  {
+    "lyric": "Come on y'all",
+    "time": 123690,
+    "beattime": 123293,
+    "beat": 274
+  },
+  {
+    "lyric": "check it out y'all",
+    "time": 126413,
+    "beattime": 125993,
+    "beat": 280
+  },
+  {
+    "lyric": "How low can you go? Can you go down low?",
+    "time": 127701,
+    "beattime": 127333,
+    "beat": 283
+  },
+  {
+    "lyric": "All the way to the floor",
+    "time": 131201,
+    "beattime": 130937,
+    "beat": 291
+  },
+  {
+    "lyric": "how low can you go?",
+    "time": 133057,
+    "beattime": 132713,
+    "beat": 295
+  },
+  {
+    "lyric": "Can you bring it to the top like you never",
+    "time": 134864,
+    "beattime": 134513,
+    "beat": 299
+  },
+  {
+    "lyric": "never stop?",
+    "time": 138844,
+    "beattime": 138577,
+    "beat": 308
+  },
+  {
+    "lyric": "Can you bring it to the top?",
+    "time": 139272,
+    "beattime": 139029,
+    "beat": 309
+  },
+  {
+    "lyric": "One hop",
+    "time": 140042,
+    "beattime": 139925,
+    "beat": 311
+  },
+  {
+    "lyric": "right foot now",
+    "time": 141697,
+    "beattime": 141253,
+    "beat": 314
+  },
+  {
+    "lyric": "Left foot now y'all",
+    "time": 143106,
+    "beattime": 143049,
+    "beat": 318
+  },
+  {
+    "lyric": "cha cha real smooth",
+    "time": 144691,
+    "beattime": 144413,
+    "beat": 321
+  },
+  {
+    "lyric": "Turn it out",
+    "time": 148499,
+    "beattime": 148449,
+    "beat": 330
+  },
+  {
+    "lyric": "to the left",
+    "time": 150523,
+    "beattime": 150245,
+    "beat": 334
+  },
+  {
+    "lyric": "take it back now y'all",
+    "time": 151960,
+    "beattime": 151589,
+    "beat": 337
+  },
+  {
+    "lyric": "One hop this time",
+    "time": 153627,
+    "beattime": 153393,
+    "beat": 341
+  },
+  {
+    "lyric": "one hop this time",
+    "time": 155471,
+    "beattime": 155201,
+    "beat": 345
+  },
+  {
+    "lyric": "Reverse",
+    "time": 157307,
+    "beattime": 156981,
+    "beat": 349
+  },
+  {
+    "lyric": "reverse",
+    "time": 159055,
+    "beattime": 158777,
+    "beat": 353
+  },
+  {
+    "lyric": "slide to the left",
+    "time": 160868,
+    "beattime": 160569,
+    "beat": 357
+  },
+  {
+    "lyric": "slide to the right",
+    "time": 162616,
+    "beattime": 162361,
+    "beat": 361
+  },
+  {
+    "lyric": "Reverse",
+    "time": 164491,
+    "beattime": 164165,
+    "beat": 365
+  },
+  {
+    "lyric": "reverse",
+    "time": 164941,
+    "beattime": 164617,
+    "beat": 366
+  },
+  {
+    "lyric": "reverse",
+    "time": 166208,
+    "beattime": 165941,
+    "beat": 369
+  },
+  {
+    "lyric": "reverse",
+    "time": 166636,
+    "beattime": 166397,
+    "beat": 370
+  },
+  {
+    "lyric": "Cha cha now y'all",
+    "time": 168053,
+    "beattime": 167749,
+    "beat": 373
+  },
+  {
+    "lyric": "cha cha again",
+    "time": 169849,
+    "beattime": 169549,
+    "beat": 377
+  },
+  {
+    "lyric": "Cha cha now y'all",
+    "time": 171577,
+    "beattime": 171337,
+    "beat": 381
+  },
+  {
+    "lyric": "cha cha again",
+    "time": 173341,
+    "beattime": 173141,
+    "beat": 385
+  },
+  {
+    "lyric": "Turn it out",
+    "time": 175537,
+    "beattime": 175393,
+    "beat": 390
+  },
+  {
+    "lyric": "to the left",
+    "time": 177216,
+    "beattime": 177185,
+    "beat": 394
+  },
+  {
+    "lyric": "take it back now y'all",
+    "time": 178969,
+    "beattime": 178541,
+    "beat": 397
+  },
+  {
+    "lyric": "Two hops",
+    "time": 180564,
+    "beattime": 180341,
+    "beat": 401
+  },
+  {
+    "lyric": "two hops",
+    "time": 181036,
+    "beattime": 180789,
+    "beat": 402
+  },
+  {
+    "lyric": "two hops",
+    "time": 182381,
+    "beattime": 182145,
+    "beat": 405
+  },
+  {
+    "lyric": "two hops",
+    "time": 182822,
+    "beattime": 182597,
+    "beat": 406
+  },
+  {
+    "lyric": "Right foot let's stomp",
+    "time": 184258,
+    "beattime": 184101,
+    "beat": 409
+  },
+  {
+    "lyric": "left foot let's stomp",
+    "time": 186050,
+    "beattime": 185945,
+    "beat": 413
+  },
+  {
+    "lyric": "Charlie Brown",
+    "time": 187801,
+    "beattime": 187745,
+    "beat": 417
+  },
+  {
+    "lyric": "hop it out now",
+    "time": 190255,
+    "beattime": 189997,
+    "beat": 422
+  },
+  {
+    "lyric": "Slide to the right",
+    "time": 191701,
+    "beattime": 191337,
+    "beat": 425
+  },
+  {
+    "lyric": "slide to the left",
+    "time": 193337,
+    "beattime": 193137,
+    "beat": 429
+  },
+  {
+    "lyric": "Take it back now y'all",
+    "time": 195034,
+    "beattime": 194921,
+    "beat": 433
+  },
+  {
+    "lyric": "cha cha now y'all",
+    "time": 196761,
+    "beattime": 196721,
+    "beat": 437
+  },
+  {
+    "lyric": "Oh yeah",
+    "time": 199136,
+    "beattime": 198973,
+    "beat": 442
+  },
+  {
+    "lyric": "yeah",
+    "time": 201041,
+    "beattime": 200773,
+    "beat": 446
+  },
+  {
+    "lyric": "yeah",
+    "time": 203544,
+    "beattime": 203445,
+    "beat": 452
+  },
+  {
+    "lyric": "do that stuff",
+    "time": 204723,
+    "beattime": 204337,
+    "beat": 454
+  },
+  {
+    "lyric": "do that",
+    "time": 205858,
+    "beattime": 205693,
+    "beat": 457
+  },
+  {
+    "lyric": "Do that",
+    "time": 207654,
+    "beattime": 207493,
+    "beat": 461
+  },
+  {
+    "lyric": "oh yeah",
+    "time": 208074,
+    "beattime": 207945,
+    "beat": 462
+  },
+  {
+    "lyric": "yeah",
+    "time": 208881,
+    "beattime": 208845,
+    "beat": 464
+  },
+  {
+    "lyric": "I'm out y'all peace",
+    "time": 211338,
+    "beattime": 211073,
+    "beat": 469
+  }
+]

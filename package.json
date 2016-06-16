@@ -1,11 +1,15 @@
 {
   "name": "drone-dancing",
+  "main": "lyrics.html",
   "version": "0.1.0",
   "description": "Mobile app what will make a drone dance",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "UTC Sheffield Techgroup Drone Dancing"
   },
   "repository": {
     "type": "git",
@@ -24,11 +28,12 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "jade": "~1.11.0",
+    "knockout": "^3.4.0",
     "morgan": "~1.6.1",
+    "node-timeout": "0.0.4",
     "serve-favicon": "~2.3.0",
     "socket.io": "~1.4.5",
     "temporal": "^0.5.0",
-    "timeout-callback": "~1.0.0",
-    "node-timeout": "0.0.4"
+    "timeout-callback": "~1.0.0"
   }
 }

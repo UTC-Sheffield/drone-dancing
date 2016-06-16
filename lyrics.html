@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head><title>UTC Sheffield Techgroup Drone Dancing</title></head>
+	<body>
+	<h1>UTC Sheffield Techgroup Drone Dancing</h1>
+	<label>Song</label><select id="song">
+		<option value="ccs">Cha Cha Slide</option>
+		<option value="test">Test</option>
+	</select><br />
+
+	<button id="start" onclick="Start();">Start</button>
+	<button id="pause" onclick="Pause();">Pause</button>
+	<button id="stop" onclick="Stop();">Stop</button>
+	<button id="load" onclick="Load();">Load</button> <br />
+	 <br />
+	
+	<!-- Not form and submit button so return has no action http://knockoutjs.com/documentation/submit-binding.html-->
+	<button data-bind='enable: lines().length > 0, click: save' >Save</button>
+	<br />
+	<button data-bind='click: addLyric'>Next Lyric</button>
+	<h3 id="nextline">&nbsp;</h3>
+	
+	<p>You have <span data-bind='text: lines().length'>&nbsp;</span> Lyric(s)</p>
+    <table data-bind='visible: lines().length > 0'>
+        <thead>
+            <tr>
+                <th>Lyric</th>
+                <th>Beat</th>
+                <th />
+            </tr>
+        </thead>
+        <tbody data-bind='foreach: lines'>
+            <tr>
+                <td data-bind='text: lyric' ></td>
+                <td><input class='required number' type='number' data-bind='value: beat, uniqueName: true' /></td>
+                <td><a href='#' data-bind='click: $root.playFrom'>Play</a></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<br />
+	<audio id="audioplayer" preload="auto" >
+	  <source src="songs/ccs.ogg" type="audio/ogg" />
+	</audio> 
+	
+	<script src="node_modules/knockout/build/output/knockout-latest.js"></script>
+	<script src="lyrics.js"></script>
+</body>
+</html>
