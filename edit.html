@@ -3,56 +3,74 @@
 	<head><title>UTC Sheffield Techgroup Drone Dancing</title></head>
 	<body>
 	<h1>UTC Sheffield Techgroup Drone Dancing</h1>
-	<!--<label>Song</label><select id="song">
+
+	<label>Song</label><select id="song">
 		<option value="ccs">Cha Cha Slide</option>
 		<option value="test">Test</option>
 	</select><br />
-	-->
-	<!-- have the beats a control and have the lyric recalc from the running beat count -->
-	<p>You have asked for <span data-bind='text: gifts().length'>&nbsp;</span> gift(s)</p>
-    <table data-bind='visible: gifts().length > 0'>
-        <thead>
+
+	<button id="start" onclick="Start();">Start</button>
+	<button id="pause" onclick="Pause();">Pause</button>
+	<button id="stop" onclick="Stop();">Stop</button>
+	<button id="load" onclick="Load();">Load</button> <br />
+	 <br />
+	
+	<!-- Not form and submit button so return has no action http://knockoutjs.com/documentation/submit-binding.html-->
+	<button data-bind='enable: lines().length > 0, click: save' >Save</button>
+	
+	<br />
+	<table data-bind='visible: lines().length > 0'>
+		<tr>
+			<th>Step</th>
+			<th>Start Beat</th>
+			<th colspan="4">Choreography</th>
+			<th colspan="4">Simulated Position</th>
+			<th colspan="2">Current Lyric</th>
+			
+		</tr>
+		<tr>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+			<th>Move</th>
+			<th>Params</th>
+			<th>Beats</th>
+			<th />
+			<th>x</th>
+			<th>y</th>
+			<th>z</th>
+			<th>yaw</th>
+			<th>Lyric</th>
+			<th>Start Beat</th>
+			
+		</tr>
+		<tbody data-bind='foreach: moves'>
             <tr>
-                <th>Gift name</th>
-                <th>Price</th>
-                <th />
-            </tr>
-        </thead>
-        <tbody data-bind='foreach: gifts'>
-            <tr>
-                <td><input class='required' data-bind='value: name, uniqueName: true' /></td>
-                <td><input class='required number' data-bind='value: price, uniqueName: true' /></td>
-                <td><a href='#' data-bind='click: $root.removeGift'>Delete</a></td>
+				<td data-bind='text: step'>&nbsp;</td>
+				<td data-bind='text: beat'>&nbsp;</td>
+				<td><select data-bind="options: availableMoves, value: move, uniqueName: true"></select></td>
+				<!-- possible if for params as number or text here -->
+				<td><input class='required string' type='text' data-bind='value: params, uniqueName: true' /></td>
+				<td><input class='required number' type='number' data-bind='value: beats, uniqueName: true' /></td>
+				<td><a href='#' data-bind='click: $root.playFrom'>Play</a></td>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+				<td>yaw</td>
+                <td data-bind='text: lyric' ></td>
+                <td data-bind='text: lyricbeat' ></td>
+                
             </tr>
         </tbody>
-    </table>
- 
-    <button data-bind='click: addGift'>Add Gift</button>
-    <button data-bind='enable: gifts().length > 0' type='submit'>Submit</button>
+		
+	</table>
 
 
-	
-	<button id="start" onclick="Start();">Start</button>
-	<button id="stop" onclick="Stop();">Stop</button> <br />
 	<br />
 	<audio id="audioplayer" preload="auto" >
 	  <source src="songs/ccs.ogg" type="audio/ogg" />
 	</audio> 
 	
-	<br />
-	<table id="monitoring">
-		<tr>
-			<th>Step</th>
-			<th>x</th>
-			<th>y</th>
-			<th>z</th>
-			<th>yaw</th>
-			<th>move</th>
-			<th>params</th>
-			<th>beats</th>
-		</tr>
-	</table>
-	
+		
 	<script src="node_modules/knockout/build/output/knockout-latest.js"></script>
 	<script src="edit.js"></script>
 </body>

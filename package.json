@@ -1,6 +1,6 @@
 {
   "name": "drone-dancing",
-  "main": "lyrics.html",
+  "main": "edit.html",
   "version": "0.1.0",
   "description": "Mobile app what will make a drone dance",
   "private": true,
