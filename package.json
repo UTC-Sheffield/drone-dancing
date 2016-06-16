@@ -1,5 +1,6 @@
 {
   "name": "drone-dancing",
+  "main":"index.html",
   "version": "0.1.0",
   "description": "Mobile app what will make a drone dance",
   "private": true,
@@ -7,6 +8,9 @@
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "window":{
+	"title":"UTC Sheffield Techgroup Drone Dancing"
+	},
   "repository": {
     "type": "git",
     "url": "http://gitlab.utcsheffield.org.uk/12flintw/drone-dancing.git"

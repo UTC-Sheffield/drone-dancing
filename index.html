@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head><title>UTC Sheffield Techgroup Drone Dancing</title></head>
+	<body>
+	<header>
+		<a href="edit.html">Edit Choreography</a>
+		<a href="lyrics.html">Edit Lyric Timings</a>
+	</header>
+	<h1>UTC Sheffield Techgroup Drone Dancing</h1>
+	<label>Song</label><select id="song">
+		<option value="ccs">Cha Cha Slide</option>
+		<option value="test">Test</option>
+	</select><br />
+	
+	<label>Mode</label><select id="mode">
+		<option value="sim">Simulation</option>
+		<option value="sim10">Simulation x 10 speed</option>
+		<option value="drone">Drone</option>
+	</select><br />
+
+	<label>Goal Mode</label><select id="goalmode">
+		<option value="normal">Normal</option>
+		<option value="relative">Relative</option>
+	</select><br />
+
+	<label>Warning Distance (m)</label><input type="number" value="0" id="warningdistance"/>
+	<br />
+	<button id="start" onclick="Start();">Start</button>
+	<button id="stop" onclick="Stop();">Stop</button> <br />
+	<br />
+	<audio id="audioplayer" preload="auto" >
+	  <source src="songs/ccs.ogg" type="audio/ogg" />
+	</audio> 
+	
+	<br />
+	<table id="monitoring">
+		<tr>
+			<th>Step</th>
+			<th>x</th>
+			<th>y</th>
+			<th>z</th>
+			<th>yaw</th>
+			<th>move</th>
+			<th>params</th>
+			<th>beats</th>
+		</tr>
+	</table>
+
+	<script src="index.js"></script>
+</body>
+</html>
