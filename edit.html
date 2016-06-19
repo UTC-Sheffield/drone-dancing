@@ -16,10 +16,10 @@
 	 <br />
 	
 	<!-- Not form and submit button so return has no action http://knockoutjs.com/documentation/submit-binding.html-->
-	<button data-bind='enable: lines().length > 0, click: save' >Save</button>
+	<button data-bind='enable: moveslyrics().length > 0, click: save' >Save</button>
 	
 	<br />
-	<table data-bind='visible: lines().length > 0'>
+	<table data-bind='visible: moveslyrics().length > 0'>
 		<tr>
 			<th>Step</th>
 			<th>Start Beat</th>
@@ -33,7 +33,7 @@
 			<th>&nbsp;</th>
 			<th>Move</th>
 			<th>Params</th>
-			<th>Beats</th>
+			<th><!--Beats--></th>
 			<th />
 			<th>x</th>
 			<th>y</th>
@@ -43,14 +43,13 @@
 			<th>Start Beat</th>
 			
 		</tr>
-		<tbody data-bind='foreach: moves'>
+		<tbody data-bind='foreach: moveslyrics'>
             <tr>
 				<td data-bind='text: step'>&nbsp;</td>
-				<td data-bind='text: beat'>&nbsp;</td>
-				<td><select data-bind="options: availableMoves, value: move, uniqueName: true"></select></td>
+				<td><input class='required number' type='number' data-bind='value: beat, uniqueName: true' /></td>
+				<td><select data-bind="options: $root.availableMoves, value: move, uniqueName: true"></select></td>
 				<!-- possible if for params as number or text here -->
-				<td><input class='required string' type='text' data-bind='value: params, uniqueName: true' /></td>
-				<td><input class='required number' type='number' data-bind='value: beats, uniqueName: true' /></td>
+				<td><input class='required string' type='text' data-bind='value: param, uniqueName: true' /></td>
 				<td><a href='#' data-bind='click: $root.playFrom'>Play</a></td>
 				<td>x</td>
 				<td>y</td>
@@ -72,6 +71,7 @@
 	
 		
 	<script src="node_modules/knockout/build/output/knockout-latest.js"></script>
+	<script src='node_modules/knockout-transformations/dist/knockout-transformations.min.js'></script>
 	<script src="edit.js"></script>
 </body>
 </html>
