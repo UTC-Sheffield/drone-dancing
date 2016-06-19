@@ -5,7 +5,7 @@
   "description": "Mobile app what will make a drone dance",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node_modules/.bin/electron main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "window": {
@@ -21,6 +21,7 @@
   "author": "UTC Sheffield Tech group",
   "license": "GPL-2.0",
   "dependencies": {
+	"electron-prebuilt": "^1.2.3",
     "ar-drone": "^0.3.3",
     "ardrone-autonomy-withsim": "^0.1.2",
     "body-parser": "~1.13.2",
@@ -29,6 +30,7 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "knockout": "^3.4.0",
+    "knockout-transformations": "^2.1.0",
     "morgan": "~1.6.1",
     "node-timeout": "0.0.4",
     "serve-favicon": "~2.3.0",
